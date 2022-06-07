@@ -1,5 +1,7 @@
 # etude-next
 
+![2022-06-07 20 07 41 0 0 0 0 3e22d2e4f325](https://user-images.githubusercontent.com/32637762/172365244-7d183949-22bd-4814-b378-5c27d7f99196.png)
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 - [How to](#how-to)

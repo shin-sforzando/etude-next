@@ -1,4 +1,5 @@
 import Layout from "../../components/layout"
+import { getAllPostIds, getPostData } from "../../lib/posts"
 
 export default function Post({ postData }) {
   return (
@@ -11,8 +12,6 @@ export default function Post({ postData }) {
     </Layout>
   )
 }
-
-import { getAllPostIds, getPostData } from '../../lib/posts'
 
 export async function getStaticProps({ params }) {
   const postData = await getPostData(params.id)

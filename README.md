@@ -8,7 +8,7 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
   - [Vercel](#vercel)
 - [Misc](#misc)
   - [ToDo](#todo)
-- [Learn More](#learn-more)
+  - [Learn More](#learn-more)
 
 ## How to
 
@@ -41,7 +41,7 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 - [ ] Introduce formatter
 - [ ] Introduce Git Hooks
 
-## Learn More
+### Learn More
 
 To learn more about Next.js, take a look at the following resources:
 

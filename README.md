@@ -38,8 +38,7 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 
 ### ToDo
 
-- [ ] Introduce formatter
-- [ ] Introduce Git Hooks
+(T. B. D.)
 
 ### Learn More
 

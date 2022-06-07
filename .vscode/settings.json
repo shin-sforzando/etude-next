@@ -1,5 +1,16 @@
 {
   "cSpell.words": ["Vercel"],
   "editor.formatOnSave": true,
-  "eslint.alwaysShowStatus": true
+  "editor.codeActionsOnSave": {
+    "source.fixAll": true
+  },
+  "eslint.alwaysShowStatus": true,
+  "[css]": {
+    "editor.formatOnSave": false
+  },
+  "[scss]": {
+    "editor.formatOnSave": false
+  },
+  "css.validate": false,
+  "scss.validate": false
 }

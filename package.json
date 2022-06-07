@@ -8,12 +8,15 @@
     "start": "next start",
     "lint": "next lint",
     "lint:fix": "next lint --fix",
-    "format": "prettier --ignore-path .gitignore --write '**/*.{js,jsx,ts,tsx,json,md,mdx}'",
+    "lint:style": "stylelint --fix **/*.{css,scss,sass}",
+    "format": "prettier --ignore-path .gitignore --write '**/*.{js,jsx,ts,tsx,json}'",
     "prepare": "husky install"
   },
   "lint-staged": {
-    "*.{js,jsx,ts,tsx}": [
-      "eslint --fix"
+    "*.{js,jsx,ts,tsx,json}": [
+      "nextlint --fix",
+      "stylelint --fix **/*.{css,scss,sass}",
+      "prettier --ignore-path .gitignore --write '**/*.{js,jsx,ts,tsx,json}'"
     ]
   },
   "dependencies": {
@@ -36,6 +39,9 @@
     "lint-staged": "^13.0.0",
     "prettier": "^2.6.2",
     "sass": "^1.52.2",
+    "stylelint": "^14.8.5",
+    "stylelint-config-standard-scss": "^4.0.0",
+    "stylelint-order": "^5.0.0",
     "typescript": "4.7.3"
   }
 }

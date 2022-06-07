@@ -29,7 +29,7 @@ export default function Layout({ children, home }: { children: ReactNode; home?:
             <Image
               priority
               src='/images/profile.png'
-              className={utilStyles.borderCircle}
+              className={utilStyles['border-circle']}
               height={144}
               width={144}
               alt={name}
@@ -42,16 +42,16 @@ export default function Layout({ children, home }: { children: ReactNode; home?:
                 <Image
                   priority
                   src='/images/profile.png'
-                  className={utilStyles.borderCircle}
+                  className={utilStyles['border-circle']}
                   height={108}
                   width={108}
                   alt={name}
                 />
               </a>
             </Link>
-            <h2 className={utilStyles.headingLg}>
+            <h2 className={utilStyles['heading-lg']}>
               <Link href='/'>
-                <a className={utilStyles.colorInherit}>{name}</a>
+                <a className={utilStyles['color-inherit']}>{name}</a>
               </Link>
             </h2>
           </>
@@ -59,7 +59,7 @@ export default function Layout({ children, home }: { children: ReactNode; home?:
       </header>
       <main>{children}</main>
       {!home && (
-        <div className={styles.backToHome}>
+        <div className={styles['back-to-home']}>
           <Link href='/'>
             <a>← Back to home</a>
           </Link>

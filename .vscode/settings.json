@@ -1,5 +1,5 @@
 {
-    "cSpell.words": [
-        "Vercel"
-    ]
+  "cSpell.words": ["Vercel"],
+  "editor.formatOnSave": true,
+  "eslint.alwaysShowStatus": true
 }

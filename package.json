@@ -16,7 +16,8 @@
     "*.{js,jsx,ts,tsx,json}": [
       "nextlint --fix",
       "stylelint --fix **/*.{css,scss,sass}",
-      "prettier --ignore-path .gitignore --write '**/*.{js,jsx,ts,tsx,json}'"
+      "prettier --ignore-path .gitignore --write '**/*.{js,jsx,ts,tsx,json}'",
+      "git add"
     ]
   },
   "dependencies": {

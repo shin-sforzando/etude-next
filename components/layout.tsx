@@ -3,7 +3,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { ReactNode } from 'react'
 import styles from './layout.module.scss'
-import utilStyles from '../styles/utils.module.scss'
+import utilsStyles from '/styles/utils.module.scss'
 
 const name = 'shin-sforzando'
 export const siteTitle = 'Etude of Next.js'
@@ -29,7 +29,7 @@ export default function Layout({ children, home }: { children: ReactNode; home?:
             <Image
               priority
               src='/images/profile.png'
-              className={utilStyles['border-circle']}
+              className={utilsStyles.profile}
               height={144}
               width={144}
               alt={name}
@@ -42,16 +42,16 @@ export default function Layout({ children, home }: { children: ReactNode; home?:
                 <Image
                   priority
                   src='/images/profile.png'
-                  className={utilStyles['border-circle']}
+                  className={utilsStyles.profile}
                   height={108}
                   width={108}
                   alt={name}
                 />
               </a>
             </Link>
-            <h2 className={utilStyles['heading-lg']}>
+            <h2 className='text-lg'>
               <Link href='/'>
-                <a className={utilStyles['color-inherit']}>{name}</a>
+                <a className='text-inherit'>{name}</a>
               </Link>
             </h2>
           </>

@@ -22,6 +22,8 @@ export default function Layout({ children, home }: { children: ReactNode; home?:
         />
         <meta name='og:title' content={siteTitle} />
         <meta name='twitter:card' content='summary_large_image' />
+        <meta name="google" content="nositelinkssearchbox" key="sitelinks" />
+        <meta name="google" content="notranslate" key="notranslate" />
       </Head>
       <header className={styles.header}>
         {home ? (

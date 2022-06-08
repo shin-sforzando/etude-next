@@ -1,6 +1,5 @@
 import Date from '/components/date'
 import Layout from '/components/layout'
-import utilStyles from '/styles/utils.module.scss'
 import Head from 'next/head'
 import { GetStaticProps, GetStaticPaths } from 'next'
 import { getAllPostIds, getPostData } from '/lib/posts'
@@ -19,7 +18,7 @@ export default function Post({
       <Head>
         <title>{postData.title}</title>
       </Head>
-      <h1 className={utilStyles['heading-xl']}>{postData.title}</h1>
+      <h1 className='text-xl'>{postData.title}</h1>
       <div className='text-black/50'>
         <Date dateString={postData.date} />
       </div>

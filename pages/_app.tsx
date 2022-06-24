@@ -6,5 +6,5 @@ export default function MyApp({ Component, pageProps }: AppProps) {
 }
 
 export function reportWebVitals(metric: NextWebVitalsMetric) {
-  console.log("%O", metric)
+  console.log('%O', metric)
 }

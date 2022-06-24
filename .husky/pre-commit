@@ -2,6 +2,6 @@
 
 . "$(dirname -- "$0")/_/husky.sh"
 
-docker compose exec app npm run lint:fix
-docker compose exec app npm run lint:style
-docker compose exec app npm run format
+docker compose run app npm run lint:fix
+docker compose run app npm run lint:style
+docker compose run app npm run format

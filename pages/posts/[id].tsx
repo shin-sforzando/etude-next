@@ -37,7 +37,9 @@ export const getStaticPaths: GetStaticPaths = async () => {
 
 export const getStaticProps: GetStaticProps = async ({
   params,
-}: { params: { id: string } }): Promise<{ props: { postData: { date: string; title: string; id: string; contentHtml: any } } }> => {
+}: {
+  params: { id: string }
+}): Promise<{ props: { postData: { date: string; title: string; id: string; contentHtml: any } } }> => {
   const postData = await getPostData(params.id as string)
   return {
     props: {

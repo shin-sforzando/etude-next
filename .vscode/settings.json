@@ -5,6 +5,10 @@
     "source.fixAll": true
   },
   "eslint.alwaysShowStatus": true,
+  "[typescriptreact]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
   "[css]": {
     "editor.formatOnSave": false
   },

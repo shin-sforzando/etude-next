@@ -6,8 +6,8 @@ import { getSortedPostsData } from '/lib/posts'
 import { GetStaticProps } from 'next'
 import styled from 'styled-components'
 
-const H2 = styled.h2`
-  color: red;
+const ColoredText = styled.p`
+  color: ${(props) => props.theme.colors.primary};
 `
 
 export default function Home({ allPostsData }): any {
@@ -22,7 +22,7 @@ export default function Home({ allPostsData }): any {
         </p>
       </section>
       <section className='pt-1 text-lg'>
-        <H2 className='text-xl'>Blog</H2>
+        <h1 className='text-xl'>Blog</h1>
         <ul className='list-none'>
           {allPostsData.map(({ id, date, title }) => (
             <li className='m-5' key={id}>
@@ -36,6 +36,8 @@ export default function Home({ allPostsData }): any {
             </li>
           ))}
         </ul>
+        <Link href={'/ssr'}>Go to SSR</Link>
+        <ColoredText>This is ColoredText.</ColoredText>
       </section>
     </Layout>
   )

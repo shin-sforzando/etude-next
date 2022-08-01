@@ -4,6 +4,11 @@ import Date from '/components/date'
 import Layout, { siteTitle } from '/components/layout'
 import { getSortedPostsData } from '/lib/posts'
 import { GetStaticProps } from 'next'
+import styled from 'styled-components'
+
+const H2 = styled.h2`
+  color: red;
+`
 
 export default function Home({ allPostsData }): any {
   return (
@@ -17,7 +22,7 @@ export default function Home({ allPostsData }): any {
         </p>
       </section>
       <section className='pt-1 text-lg'>
-        <h2 className='text-xl'>Blog</h2>
+        <H2 className='text-xl'>Blog</H2>
         <ul className='list-none'>
           {allPostsData.map(({ id, date, title }) => (
             <li className='m-5' key={id}>

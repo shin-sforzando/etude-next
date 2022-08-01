@@ -6,6 +6,7 @@ export default function Hello() {
     fetch('/api/hello')
       .then((res) => res.json())
       .then((data) => setData(data))
+      .catch((err) => console.error(err))
   }, [])
 
   return <div>{data.text}</div>

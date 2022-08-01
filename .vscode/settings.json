@@ -1,9 +1,5 @@
 {
-  "cSpell.words": [
-    "nextlint",
-    "stylelint",
-    "Vercel"
-  ],
+  "cSpell.words": ["nextlint", "stylelint", "tailwindcss", "Vercel"],
   "editor.formatOnSave": true,
   "editor.codeActionsOnSave": {
     "source.fixAll": true

@@ -7,4 +7,5 @@ services:
       - .:/usr/src/app:cached
     ports:
       - '3000:3000'
+      - '6006:6006'  # storybook
     command: bash -c "yarn dev"

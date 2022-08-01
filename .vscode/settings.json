@@ -1,5 +1,13 @@
 {
-  "cSpell.words": ["nextlint", "stylelint", "tailwindcss", "Vercel"],
+  "cSpell.words": [
+    "nextlint",
+    "nositelinkssearchbox",
+    "notranslate",
+    "sitelinks",
+    "stylelint",
+    "tailwindcss",
+    "Vercel"
+  ],
   "editor.formatOnSave": true,
   "editor.codeActionsOnSave": {
     "source.fixAll": true

@@ -6,6 +6,7 @@
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
+- [Requirements](#requirements)
 - [How to](#how-to)
   - [Start](#start)
   - [Deploy](#deploy)
@@ -13,6 +14,10 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 - [Misc](#misc)
   - [ToDo](#todo)
   - [Learn More](#learn-more)
+
+## Requirements
+
+(T. B. D.)
 
 ## How to
 
@@ -52,6 +57,7 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
   - [ ] Storyshots
   - [ ] Storysource
   - [ ] Theme
+- [ ] Introduce [Docusaurus](https://docusaurus.io/)
 - [ ] Introduce Jest
 
 ### Learn More

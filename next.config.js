@@ -9,12 +9,16 @@ module.exports = {
     ignoreBuildErrors: true,
   },
   async headers() {
-    return [{
-      source: "/(.*)",
-      headers: [{
-        key: "X-DNS-Prefetch-Control",
-        value: "on",
-      }]
-    }]
-  }
+    return [
+      {
+        source: '/(.*)',
+        headers: [
+          {
+            key: 'X-DNS-Prefetch-Control',
+            value: 'on',
+          },
+        ],
+      },
+    ]
+  },
 }

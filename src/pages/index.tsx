@@ -1,16 +1,12 @@
 import Head from 'next/head'
 import Link from 'next/link'
-import Date from '/components/date'
-import Layout, { siteTitle } from '/components/layout'
-import { getSortedPostsData } from '/lib/posts'
+import Date from '@/components/date'
+import Layout, { siteTitle } from '@/components/layout'
+import { getSortedPostsData, PostData } from '@/lib/posts'
 import { GetStaticProps } from 'next'
-import styled from 'styled-components'
+import { StyledButton } from '@/components/StyledButton'
 
-const ColoredText = styled.p`
-  color: ${(props) => props.theme.colors.primary};
-`
-
-export default function Home({ allPostsData }): any {
+export default function Home({ allPostsData }): JSX.Element {
   return (
     <Layout home>
       <Head>
@@ -37,7 +33,7 @@ export default function Home({ allPostsData }): any {
           ))}
         </ul>
         <Link href={'/ssr'}>Go to SSR</Link>
-        <ColoredText>This is ColoredText.</ColoredText>
+        <StyledButton variant='success'>Styled Button</StyledButton>
       </section>
     </Layout>
   )

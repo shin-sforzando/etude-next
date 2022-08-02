@@ -8,4 +8,13 @@ module.exports = {
   typescript: {
     ignoreBuildErrors: true,
   },
+  async headers() {
+    return [{
+      source: "/(.*)",
+      headers: [{
+        key: "X-DNS-Prefetch-Control",
+        value: "on",
+      }]
+    }]
+  }
 }

@@ -1,8 +1,8 @@
-import Date from '/components/date'
-import Layout from '/components/layout'
+import Date from '@/components/date'
+import Layout from '@/components/layout'
 import Head from 'next/head'
 import { GetStaticProps, GetStaticPaths } from 'next'
-import { getAllPostIds, getPostData } from '/lib/posts'
+import { getAllPostIds, getPostData } from '@/lib/posts'
 import { useRouter } from 'next/router'
 
 export default function Post({

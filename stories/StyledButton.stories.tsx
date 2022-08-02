@@ -1,6 +1,6 @@
 import { ComponentMeta } from '@storybook/react'
 import { useState } from 'react'
-import { StyledButton, StyledButtonProps } from '../components/StyledButton'
+import { StyledButton, StyledButtonProps } from '@/components/StyledButton'
 import { action } from '@storybook/addon-actions'
 
 export default {

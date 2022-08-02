@@ -3,7 +3,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { ReactNode } from 'react'
 import styles from './layout.module.scss'
-import utilsStyles from '/styles/utils.module.scss'
+import utilsStyles from '@/styles/utils.module.scss'
 
 const name = 'shin-sforzando'
 export const siteTitle = 'Etude of Next.js'

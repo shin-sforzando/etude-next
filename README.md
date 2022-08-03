@@ -50,7 +50,7 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 
 ### ToDo
 
-- [ ] Introduce [tailwindcss-classnames](https://github.com/muhammadsammy/tailwindcss-classnames)
+- [x] Introduce [tailwindcss-classnames](https://github.com/muhammadsammy/tailwindcss-classnames)
 - [ ] Improve Storybook
   - [ ] a11y
   - [ ] Designs
@@ -60,9 +60,9 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
   - [ ] Storyshots
   - [ ] Storysource
   - [ ] Theme
-- [ ] Introduce Logger
+- [x] Introduce Logger
 - [ ] Introduce [Docusaurus](https://docusaurus.io/) as Document Generator
-- [ ] Introduce Jest as Testing Framework
+- [X] Introduce Jest as Testing Framework
 
 ### Learn More
 

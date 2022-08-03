@@ -2,9 +2,12 @@ import Head from 'next/head'
 import Link from 'next/link'
 import Date from '@/components/date'
 import Layout, { siteTitle } from '@/components/layout'
-import { getSortedPostsData, PostData } from '@/lib/posts'
+import { getSortedPostsData } from '@/lib/posts'
 import { GetStaticProps } from 'next'
 import { StyledButton } from '@/components/StyledButton'
+import { classnames, fontSize } from 'tailwindcss-classnames'
+
+const xlStyle = classnames(fontSize('text-xl'))
 
 export default function Home({ allPostsData }): JSX.Element {
   return (
@@ -18,7 +21,7 @@ export default function Home({ allPostsData }): JSX.Element {
         </p>
       </section>
       <section className='pt-1 text-lg'>
-        <h1 className='text-xl'>Blog</h1>
+        <h1 className={xlStyle}>Blog</h1>
         <ul className='list-none'>
           {allPostsData.map(({ id, date, title }) => (
             <li className='m-5' key={id}>

@@ -5,3 +5,4 @@
 docker compose exec -T app yarn lint:fix
 docker compose exec -T app yarn lint:style
 docker compose exec -T app yarn format
+docker compose exec -T app yarn test

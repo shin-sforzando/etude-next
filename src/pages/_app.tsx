@@ -2,6 +2,7 @@ import '@/styles/globals.scss'
 import type { AppProps, NextWebVitalsMetric } from 'next/app'
 import { ThemeProvider } from 'styled-components'
 import { theme } from '@/styles/theme'
+export { reportWebVitals } from 'next-axiom'
 
 export default function MyApp({ Component, pageProps }: AppProps) {
   return (
@@ -9,8 +10,4 @@ export default function MyApp({ Component, pageProps }: AppProps) {
       <Component {...pageProps} />
     </ThemeProvider>
   )
-}
-
-export function reportWebVitals(metric: NextWebVitalsMetric) {
-  console.log('%O', metric)
 }

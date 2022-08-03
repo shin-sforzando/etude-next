@@ -60,7 +60,7 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
   - [ ] Storyshots
   - [ ] Storysource
   - [ ] Theme
-- [ ] Introduce [pino](https://github.com/pinojs/pino) as Logger
+- [ ] Introduce Logger
 - [ ] Introduce [Docusaurus](https://docusaurus.io/) as Document Generator
 - [ ] Introduce Jest as Testing Framework
 

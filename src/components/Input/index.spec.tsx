@@ -1,3 +1,4 @@
+import { fireEvent } from '@storybook/testing-library'
 import { screen, render, RenderResult } from '@testing-library/react'
 import { Input } from './index'
 
@@ -11,6 +12,20 @@ describe('Input', () => {
   })
   it('should be empty in input on initial render', () => {
     const inputNode = screen.getByLabelText('Username') as HTMLInputElement
-    expect(inputNode.value).toBe('')
+    expect(inputNode).toHaveValue('')
+  })
+  it('should show input text', () => {
+    const inputText = 'This is test.'
+    const inputNode = screen.getByLabelText('Username') as HTMLInputElement
+    fireEvent.change(inputNode, { target: { value: inputText } })
+    expect(inputNode).toHaveValue(inputText)
+  })
+  it('should reset when user clicks button', () => {
+    const inputText = 'This is test.'
+    const inputNode = screen.getByLabelText('Username') as HTMLInputElement
+    fireEvent.change(inputNode, { target: { value: inputText } })
+    const buttonNode = screen.getByRole('button', { name: 'Reset' }) as HTMLButtonElement
+    fireEvent.click(buttonNode)
+    expect(inputNode).toHaveValue('')
   })
 })

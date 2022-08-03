@@ -1,8 +1,6 @@
 /** @type {import("next").NextConfig} */
 
-const {
-  withAxiom
-} = require("next-axiom")
+const { withAxiom } = require('next-axiom')
 
 module.exports = withAxiom({
   reactStrictMode: true,
@@ -13,12 +11,16 @@ module.exports = withAxiom({
     ignoreBuildErrors: true,
   },
   async headers() {
-    return [{
-      source: '/(.*)',
-      headers: [{
-        key: 'X-DNS-Prefetch-Control',
-        value: 'on',
-      }, ],
-    }, ]
+    return [
+      {
+        source: '/(.*)',
+        headers: [
+          {
+            key: 'X-DNS-Prefetch-Control',
+            value: 'on',
+          },
+        ],
+      },
+    ]
   },
 })

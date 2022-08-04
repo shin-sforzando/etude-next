@@ -1,7 +1,7 @@
 import { log } from 'next-axiom'
 import { useEffect, useState } from 'react'
 
-export default function Hello() {
+const Hello = () => {
   log.info('hello')
   const [data, setData] = useState({ text: '' })
   useEffect(() => {
@@ -11,5 +11,7 @@ export default function Hello() {
       .catch((err) => log.error(err))
   }, [])
 
-  return <div>{data.text}</div>
+  return <>{data.text}</>
 }
+
+export default Hello

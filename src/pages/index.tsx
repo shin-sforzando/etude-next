@@ -6,11 +6,12 @@ import { classnames, fontSize } from 'tailwindcss-classnames'
 import Date from '@/components/date'
 import Layout, { siteTitle } from '@/components/layout'
 import { StyledButton } from '@/components/StyledButton'
-import { getSortedPostsData } from '@/lib/posts'
+import { getSortedPostsData, PostData } from '@/lib/posts'
 
 const xlStyle = classnames(fontSize('text-xl'))
 
-export default function Home({ allPostsData }): JSX.Element {
+export default function Home(props: { allPostsData: PostData[] }): JSX.Element {
+  const { allPostsData } = props
   return (
     <Layout home>
       <Head>

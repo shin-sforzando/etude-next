@@ -8,7 +8,7 @@ type SSGProps = {
 const SSG: NextPage<SSGProps> = (props) => {
   const { message } = props
   return (
-    <div>
+    <>
       <Head>
         <title>Static Site Generation</title>
         <link rel='icon' href='/favicon.ico' />
@@ -17,7 +17,7 @@ const SSG: NextPage<SSGProps> = (props) => {
         <p>This page was generated during build using Static Site Generation.</p>
         <p>{message}</p>
       </main>
-    </div>
+    </>
   )
 }
 

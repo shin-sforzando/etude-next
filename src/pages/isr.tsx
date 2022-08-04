@@ -15,7 +15,7 @@ const ISR: NextPage<ISRProps> = (props) => {
   }
 
   return (
-    <div>
+    <>
       <Head>
         <title>Incremental Static Regeneration</title>
         <link rel='icon' href='/favicon.ico' />
@@ -27,7 +27,7 @@ const ISR: NextPage<ISRProps> = (props) => {
           <a>Go to SSR</a>
         </Link>
       </main>
-    </div>
+    </>
   )
 }
 

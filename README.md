@@ -51,15 +51,15 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 ### ToDo
 
 - [x] Introduce [tailwindcss-classnames](https://github.com/muhammadsammy/tailwindcss-classnames)
-- [ ] Improve Storybook
+- [x] Improve Storybook
   - [x] a11y
   - [x] Designs
-  - [ ] GitHub Actions
+  - [x] GitHub Actions
   - [x] Links
   - [x] Performance
-  - [ ] Storyshots
+  - [x] Storyshots
   - [x] Storysource
-  - [ ] Theme
+  - [x] Theme
 - [x] Introduce Logger
 - [ ] Introduce [Docusaurus](https://docusaurus.io/) as Document Generator
 - [X] Introduce Jest as Testing Framework

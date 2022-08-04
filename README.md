@@ -55,7 +55,7 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
   - [ ] a11y
   - [ ] Designs
   - [ ] GitHub Actions
-  - [ ] Links
+  - [x] Links
   - [ ] Performance
   - [ ] Storyshots
   - [ ] Storysource

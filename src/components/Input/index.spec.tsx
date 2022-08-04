@@ -1,5 +1,5 @@
 import { fireEvent } from '@storybook/testing-library'
-import { render, RenderResult,screen } from '@testing-library/react'
+import { render, RenderResult, screen } from '@testing-library/react'
 
 import { Input } from './index'
 

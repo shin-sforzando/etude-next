@@ -52,13 +52,13 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 
 - [x] Introduce [tailwindcss-classnames](https://github.com/muhammadsammy/tailwindcss-classnames)
 - [ ] Improve Storybook
-  - [ ] a11y
-  - [ ] Designs
+  - [x] a11y
+  - [x] Designs
   - [ ] GitHub Actions
   - [x] Links
-  - [ ] Performance
+  - [x] Performance
   - [ ] Storyshots
-  - [ ] Storysource
+  - [x] Storysource
   - [ ] Theme
 - [x] Introduce Logger
 - [ ] Introduce [Docusaurus](https://docusaurus.io/) as Document Generator

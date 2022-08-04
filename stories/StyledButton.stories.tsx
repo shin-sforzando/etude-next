@@ -1,8 +1,9 @@
-import { ComponentMeta } from '@storybook/react'
-import { useState } from 'react'
-import { StyledButton, StyledButtonProps } from '@/components/StyledButton'
 import { action } from '@storybook/addon-actions'
 import { linkTo } from '@storybook/addon-links'
+import { ComponentMeta } from '@storybook/react'
+import { useState } from 'react'
+
+import { StyledButton, StyledButtonProps } from '@/components/StyledButton'
 
 export default {
   title: 'StyledButton',
@@ -61,4 +62,11 @@ export const Linked = (props: StyledButtonProps) => {
       Linked
     </StyledButton>
   )
+}
+
+Linked.parameters = {
+  design: {
+    type: 'iframe',
+    url: 'https://www.kansaigaidai.ac.jp/asp/img/pdf/82/7a79c35f7ce0704dec63be82440c8182.pdf',
+  },
 }

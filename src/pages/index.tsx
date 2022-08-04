@@ -1,11 +1,12 @@
+import { GetStaticProps } from 'next'
 import Head from 'next/head'
 import Link from 'next/link'
+import { classnames, fontSize } from 'tailwindcss-classnames'
+
 import Date from '@/components/date'
 import Layout, { siteTitle } from '@/components/layout'
-import { getSortedPostsData } from '@/lib/posts'
-import { GetStaticProps } from 'next'
 import { StyledButton } from '@/components/StyledButton'
-import { classnames, fontSize } from 'tailwindcss-classnames'
+import { getSortedPostsData } from '@/lib/posts'
 
 const xlStyle = classnames(fontSize('text-xl'))
 

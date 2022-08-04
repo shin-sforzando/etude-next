@@ -1,5 +1,5 @@
-import { useEffect, useState } from 'react'
 import { log } from 'next-axiom'
+import { useEffect, useState } from 'react'
 
 export default function Hello() {
   log.info('hello')

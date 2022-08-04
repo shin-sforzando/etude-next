@@ -1,11 +1,17 @@
+import { GetStaticProps } from 'next'
 import Head from 'next/head'
 import Link from 'next/link'
-import Date from '/components/date'
-import Layout, { siteTitle } from '/components/layout'
-import { getSortedPostsData } from '/lib/posts'
-import { GetStaticProps } from 'next'
+import { classnames, fontSize } from 'tailwindcss-classnames'
 
-export default function Home({ allPostsData }): any {
+import Date from '@/components/date'
+import Layout, { siteTitle } from '@/components/layout'
+import { StyledButton } from '@/components/StyledButton'
+import { getSortedPostsData, PostData } from '@/lib/posts'
+
+const xlStyle = classnames(fontSize('text-xl'))
+
+export default function Home(props: { allPostsData: PostData[] }): JSX.Element {
+  const { allPostsData } = props
   return (
     <Layout home>
       <Head>
@@ -17,7 +23,7 @@ export default function Home({ allPostsData }): any {
         </p>
       </section>
       <section className='pt-1 text-lg'>
-        <h2 className='text-xl'>Blog</h2>
+        <h1 className={xlStyle}>Blog</h1>
         <ul className='list-none'>
           {allPostsData.map(({ id, date, title }) => (
             <li className='m-5' key={id}>
@@ -31,6 +37,8 @@ export default function Home({ allPostsData }): any {
             </li>
           ))}
         </ul>
+        <Link href={'/ssr'}>Go to SSR</Link>
+        <StyledButton variant='success'>Styled Button</StyledButton>
       </section>
     </Layout>
   )

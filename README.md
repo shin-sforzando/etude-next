@@ -1,9 +1,12 @@
 # etude-next
 
+[![Storybook](https://cdn.jsdelivr.net/gh/storybookjs/brand@main/badge/badge-storybook.svg)](https://github.com/storybookjs/storybook)
+
 ![2022-06-07 20 07 41 0 0 0 0 3e22d2e4f325](https://user-images.githubusercontent.com/32637762/172365244-7d183949-22bd-4814-b378-5c27d7f99196.png)
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
+- [Prerequisites](#prerequisites)
 - [How to](#how-to)
   - [Start](#start)
   - [Deploy](#deploy)
@@ -11,6 +14,13 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 - [Misc](#misc)
   - [ToDo](#todo)
   - [Learn More](#learn-more)
+  - [Contributor](#contributor)
+
+## Prerequisites
+
+- Docker
+- Node.js
+  - Next.js
 
 ## How to
 
@@ -40,7 +50,19 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 
 ### ToDo
 
-(T. B. D.)
+- [x] Introduce [tailwindcss-classnames](https://github.com/muhammadsammy/tailwindcss-classnames)
+- [x] Improve Storybook
+  - [x] a11y
+  - [x] Designs
+  - [x] GitHub Actions
+  - [x] Links
+  - [x] Performance
+  - [x] Storyshots
+  - [x] Storysource
+  - [x] Theme
+- [x] Introduce Logger
+- [ ] Introduce [Docusaurus](https://docusaurus.io/) as Document Generator
+- [X] Introduce Jest as Testing Framework
 
 ### Learn More
 
@@ -49,3 +71,8 @@ To learn more about Next.js, take a look at the following resources:
 - [the Next.js GitHub repository](https://github.com/vercel/next.js/)
 - [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
 - [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+
+### Contributor
+
+- [sforzando LLC. and Inc.](https://sfz.dev/)
+  - [Shin'ichiro Suzuki](https://github.com/shin-sforzando)

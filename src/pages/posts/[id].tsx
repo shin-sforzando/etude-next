@@ -1,8 +1,10 @@
-import Date from '/components/date'
-import Layout from '/components/layout'
+import { GetStaticPaths, GetStaticProps } from 'next'
 import Head from 'next/head'
-import { GetStaticProps, GetStaticPaths } from 'next'
-import { getAllPostIds, getPostData } from '/lib/posts'
+import { useRouter } from 'next/router'
+
+import Date from '@/components/date'
+import Layout from '@/components/layout'
+import { getAllPostIds, getPostData } from '@/lib/posts'
 
 export default function Post({
   postData,
@@ -13,6 +15,11 @@ export default function Post({
     contentHtml: string
   }
 }) {
+  const router = useRouter()
+  if (router.isFallback) {
+    return <div>Loading...</div>
+  }
+
   return (
     <Layout>
       <Head>

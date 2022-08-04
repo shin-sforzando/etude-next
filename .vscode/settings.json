@@ -1,10 +1,25 @@
 {
-  "cSpell.words": ["nextlint", "stylelint", "tailwindcss", "Vercel"],
+  "cSpell.words": [
+    "nextlint",
+    "nositelinkssearchbox",
+    "notranslate",
+    "peaceiris",
+    "sitelinks",
+    "Storyshots",
+    "Storysource",
+    "stylelint",
+    "tailwindcss",
+    "Vercel"
+  ],
   "editor.formatOnSave": true,
   "editor.codeActionsOnSave": {
     "source.fixAll": true
   },
   "eslint.alwaysShowStatus": true,
+  "[typescriptreact]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
   "[css]": {
     "editor.formatOnSave": false
   },

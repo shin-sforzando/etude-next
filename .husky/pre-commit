@@ -1,7 +1,20 @@
 #!/usr/bin/env sh
 
+CONTAINER_NAME=${CONTAINER_NAME:-"etude-next_app"}
+SERVICE_NAME=${SERVICE_NAME:-"app"}
+
 . "$(dirname -- "$0")/_/husky.sh"
 
-docker compose exec -T app yarn lint:fix
-docker compose exec -T app yarn lint:style
-docker compose exec -T app yarn format
+if [ "$(docker inspect --format='{{.State.Running}}' ${CONTAINER_NAME})" == "true" ]; then
+  echo "Pre-commit check using Docker (${CONTAINER_NAME})"
+  docker compose exec -T ${SERVICE_NAME} yarn lint:fix
+  docker compose exec -T ${SERVICE_NAME} yarn lint:style
+  docker compose exec -T ${SERVICE_NAME} yarn format
+  docker compose exec -T ${SERVICE_NAME} yarn test
+else
+  echo "Pre-commit check using Local"
+  yarn lint:fix
+  yarn lint:style
+  yarn format
+  yarn test
+fi

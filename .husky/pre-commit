@@ -2,7 +2,14 @@
 
 . "$(dirname -- "$0")/_/husky.sh"
 
-docker compose exec -T app yarn lint:fix
-docker compose exec -T app yarn lint:style
-docker compose exec -T app yarn format
-docker compose exec -T app yarn test
+if [ "$(docker inspect --format='{{.State.Running}}' etude-next_app)" == "true" ]; then
+  docker compose exec -T app yarn lint:fix
+  docker compose exec -T app yarn lint:style
+  docker compose exec -T app yarn format
+  docker compose exec -T app yarn test
+else
+  yarn lint:fix
+  yarn lint:style
+  yarn format
+  yarn test
+fi

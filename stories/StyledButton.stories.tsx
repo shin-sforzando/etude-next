@@ -2,6 +2,7 @@ import { ComponentMeta } from '@storybook/react'
 import { useState } from 'react'
 import { StyledButton, StyledButtonProps } from '@/components/StyledButton'
 import { action } from '@storybook/addon-actions'
+import { linkTo } from '@storybook/addon-links'
 
 export default {
   title: 'StyledButton',
@@ -50,6 +51,14 @@ export const Transparent = (props: StyledButtonProps) => {
   return (
     <StyledButton {...props} variant='transparent' onClick={onClick}>
       Transparent: {count}
+    </StyledButton>
+  )
+}
+
+export const Linked = (props: StyledButtonProps) => {
+  return (
+    <StyledButton {...props} variant='success' onClick={linkTo('Example', 'Introduction')}>
+      Linked
     </StyledButton>
   )
 }

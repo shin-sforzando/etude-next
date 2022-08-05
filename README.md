@@ -61,7 +61,6 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
   - [x] Storysource
   - [x] Theme
 - [x] Introduce Logger
-- [ ] Introduce [Docusaurus](https://docusaurus.io/) as Document Generator
 - [X] Introduce Jest as Testing Framework
 
 ### Learn More

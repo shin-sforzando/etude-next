@@ -14,6 +14,7 @@ export default {
 } as ComponentMeta<typeof StyledButton>
 
 const incrementAction = action('increment')
+
 export const Primary = (props: StyledButtonProps) => {
   const [count, setCount] = useState(0)
   const onClick = (e: React.MouseEvent<HTMLElement>) => {

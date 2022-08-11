@@ -60,7 +60,7 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
   - [x] Storyshots
   - [x] Storysource
   - [x] Theme
-- [ ] Introduce Logger
+- [x] Introduce [next-axiom](https://github.com/axiomhq/next-axiom) as Logger
 - [X] Introduce Jest as Testing Framework
 
 ### Learn More

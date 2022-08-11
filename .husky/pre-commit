@@ -10,11 +10,13 @@ if [ "$(docker inspect --format='{{.State.Running}}' ${CONTAINER_NAME})" == "tru
   docker compose exec -T ${SERVICE_NAME} yarn lint:fix
   docker compose exec -T ${SERVICE_NAME} yarn lint:style
   docker compose exec -T ${SERVICE_NAME} yarn format
+  docker compose exec -T ${SERVICE_NAME} yarn build-storybook
   docker compose exec -T ${SERVICE_NAME} yarn test
 else
   echo "Pre-commit check using Local"
   yarn lint:fix
   yarn lint:style
   yarn format
+  yarn build-storybook
   yarn test
 fi

@@ -1,0 +1,16 @@
+#!/usr/bin/env sh
+
+CONTAINER_NAME=${CONTAINER_NAME:-"etude-next_app"}
+SERVICE_NAME=${SERVICE_NAME:-"app"}
+
+. "$(dirname -- "$0")/_/husky.sh"
+
+if [ "$(docker inspect --format='{{.State.Running}}' ${CONTAINER_NAME})" == "true" ]; then
+  echo "Pre-push check using Docker (${CONTAINER_NAME})"
+  docker compose exec -T ${SERVICE_NAME} yarn build-storybook
+  docker compose exec -T ${SERVICE_NAME} yarn test
+else
+  echo "Pre-push check using Local"
+  yarn build-storybook
+  yarn test
+fi
